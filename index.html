@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Happy End?</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="game">
+
+    <img src="背景/background0.png" id="bg">
+
+    <div id="phone">
+
+        <div>
+            Incoming Call
+        </div>
+
+        <br>
+
+        <div>
+            "I need to talk to you."
+        </div>
+
+        <div>
+            "Can we meet tonight?"
+        </div>
+
+        <br>
+
+        <div id="answerButton"
+             onclick="startGame()">
+            >> ANSWER
+        </div>
+
+    </div>
+
+    <div id="browser" style="display:none;">
+
+    <div class="news"
+         onclick="readArticle('bodies')">
+        MULTIPLE BODIES FOUND IN — STATE
+    </div>
+
+    <div class="news"
+         onclick="readArticle('wildfire')">
+        WILDFIRE SPREADS ACROSS REGION
+    </div>
+
+    <div class="news"
+         onclick="readArticle('internet')">
+        STUDY LINKS INTERNET USE TO LOWER ATTENTION
+    </div>
+
+    <div class="news"
+         onclick="readArticle('singer')">
+        BAND ANNOUNCES INDEFINITE HIATUS
+    </div>
+
+    <div class="news"
+         onclick="readArticle('romance')">
+        ACTORS SPOTTED TOGETHER IN LOS ANGELES
+    </div>
+
+    <div class="news"
+         onclick="readArticle('hippo')">
+        PYGMY HIPPO BORN AT CITY ZOO
+    </div>
+
+    <div class="news"
+         onclick="readArticle('movie')">
+        DIRECTOR'S NEW FILM TO OPEN NEXT MONTH
+    </div>
+
+</div>
+    <div id="article" style="display:none;">
+
+        <div id="articleCategory"></div>
+
+        <div id="articleTitle"></div>
+
+        <div id="articleDate"></div>
+
+        <div id="articleLine"></div>
+
+        <div id="articleText"></div>
+
+    </div>
+
+    <div id="backButton"
+         onclick="closeArticle()"
+         style="display:none;">
+
+        [ BACK ]
+
+    </div>
+
+    <div id="callEvent" style="display:none;">
+
+        <div id="caller">
+            FRIEND
+        </div>
+
+        <div id="callText">
+            I need to talk to you.
+        </div>
+
+        <div id="answerButton"
+             onclick="answerCall()">
+
+            [ ANSWER ]
+
+        </div>
+
+    </div>
+<div id="dialogueBox">
+
+    <div id="dialogueEnglish"></div>
+
+    <div id="dialogueJapanese"></div>
+
+</div>
+    <div id="log"></div>
+<div id="dialogueLog"></div>
+<div id="endingScreen" style="display:none;">
+
+    DO YOU WANT TO BE A HAPPY ENDING?
+
+</div>
+
+</div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
